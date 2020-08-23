@@ -1,0 +1,10 @@
+﻿<div class="row " [formGroup]="vm.form">
+  <section class="col-md-12"  >
+    <div class='form-group'>
+      <label>{{ vm.infos | traduction:'description' }}</label>
+      <input type='text' class='form-control' [(ngModel)]='vm.model.description' name='description' required formControlName='description'    maxlength=250 autocomplete='off'/>
+    </div>
+  </section>
+
+</div>
+
